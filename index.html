@@ -1,7 +1,579 @@
-<html> 
-     <header> 
-     </header> 
-     <body> 
-         test 
-     </body> 
- </html> 
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description"
+      content="Physical Adversarial Attack.">
+    <meta name="keywords" content="Physical Adversarial Attack, Privacy">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon"
+      type="image/x-icon"
+      href="./static/images/aim-logo.png" />
+
+    <title>Bi-Causal</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EDF010G6PN"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EDF010G6PN');
+
+
+  </script>
+
+    <script type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+      rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./static/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./static/slick/slick-theme.css" />
+
+    <link rel="stylesheet" href="./static/css/bulma.min.css">
+    <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+
+    <script defer src="./static/js/fontawesome.all.min.js"></script>
+    <script src="./static/js/bulma-slider.min.js"></script>
+    <script src="./static/js/index.js"></script>
+  </head>
+  <body>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a role="button" class="navbar-burger" aria-label="menu"
+          aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container">
+          <!-- <div class="columns is-centered">
+        <div class="column is-4 has-text-centered">
+          <img src="static/images/aim-logo.png" />
+        </div>
+      </div> -->
+          <div class="container has-text-centered">
+            <h1 class="title is-1 publication-title">
+              Bi-Causal: Group Activity Recognition via Bidirectional Causality
+            <div class="is-size-5 publication-authors">
+                <div class="author-block">
+                  <a href="https://github.com/angzong/">Youliang Zhang</a><sup>1</sup>
+                </div>
+                <div class="author-block">
+                  <a href="https://github.com/angzong/">Wenxuan Liu</a><sup>2</sup>
+                </div>
+                <div class="author-block">
+                  <a href="https://xiwen1.github.io/">Danni Xu</a><sup>3</sup>
+                </div>
+                <div class="author-block">
+                  <a href="https://github.com/Hallucinatie">Zhuo Zhou</a><sup>1</sup>
+                </div>
+                <div class="author-block">
+                  <a href="https://wangzwhu.github.io/home/">Zheng Wang</a><sup>1</sup>
+                </div>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Wuhan University,</span>
+              <span class="author-block"><sup>2</sup>Wuhan University of Technology,</span>
+              <span class="author-block"><sup>3</sup>National University of Singapore</span>
+            </div>
+          </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="#"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="#"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a
+                    href="https://github.com/Camera-Agnostic/Camera-Agnostic.github.io"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+                <!-- Dataset Link. -->
+                <span class="link-block">
+                  <a href="#"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="far fa-images"></i>
+                    </span>
+                    <span>Data</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class="hero teaser">
+  <div class="hero-body is-flex">
+    <div class="container is-flex is-justify-content-center" style="object-fit: contain;">
+      <div class="columns">
+        <div class="column is-flex is-justify-content-center  is-flex-wrap-wrap">
+          <!-- <video id="teaser" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/images/demo.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            <i>Video1</i> &nbsp; method shows the physical attack effect using visible light imaging.
+          </h2> -->
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/WaEb2z3C6HQ?si=eWzSA6WG-hgykdrF?autoplay=1&origin=http://example.com" title="YouTube video player" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <h2 class="subtitle has-text-centered">
+            Physical adversarial attacks of the <strong>baseline</strong> across <br> six different imaging devices.
+          </h2>
+        </div>
+        <div class="column is-flex is-justify-content-center  is-flex-wrap-wrap">
+          <!-- <video id="teaser" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/images/demo.mp4" type="video/mp4">
+          </video>
+          <h2 class="subtitle has-text-centered">
+            <i>Video2</i> &nbsp; method shows the physical attack effect using thermal infrared imaging.
+          </h2> -->
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/w2XVsYO8mCA?si=PCfbYDjoo_tWbCl1?autoplay=1&origin=http://example.com" title="YouTube video player" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <h2 class="subtitle has-text-centered">
+            Physical adversarial attacks of <strong>our method</strong> across <br> six different imaging devices.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero is-dark is-small">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <div id="results-carousel" class="carousel results-carousel">
+
+        <div>
+          <div class="results-item" >
+            <div class="is-flex is-justify-content-center"  style="object-fit: contain;">
+                <img src="./assets/display/displaySony.PNG" width="100%" alt />
+                <!-- <img src="./assets/lens/crop_000021_orig.png"  width="50%" alt /> -->
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="results-item">
+            <div class="is-flex is-justify-content-center" style="object-fit: contain;">
+
+              <img src="./assets/display/displayCanon.png" width="100%" alt />
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="results-item">
+            <div class="is-flex is-justify-content-center" style="object-fit: contain;">
+
+              <img src="./assets/display/displayiPhone.png" width="100%" alt />
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="results-item">
+            <div class="is-flex is-justify-content-center" style="object-fit: contain;">
+
+              <img src="./assets/display/displayMi.png" width="100%" alt />
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="results-item">
+            <div class="is-flex is-justify-content-center" style="object-fit: contain;">
+
+              <img src="./assets/display/displayHuawei.png" width="100%" alt />
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="results-item">
+            <div class="is-flex is-justify-content-center" style="object-fit: contain;">
+
+              <img src="./assets/display/displaySamsung.png" width="100%" alt />
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-three-quarters">
+          <p>
+            Here, we present the comparison results between <strong>T-SEA</strong> [<i>Huang et al. 2023</i>] and <strong>our method</strong>. We control the scene to eliminate the influence of irrelevant factors. Click the arrow or drag to view more results.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Current approaches in Group Activity Recognition (GAR) predominantly emphasize Human Relations (HRs) while often neglecting the impact of Human-Object Interactions (HOIs). This study prioritizes the consideration of both HRs and HOIs, emphasizing their interdependence. Notably, employing Granger Causality Tests reveals the presence of bidirectional causality between HRs and HOIs. Leveraging this insight, we propose a Bidirectional-Causal GAR network.
+            This network establishes a causality communication channel while modeling relations and interactions, enabling reciprocal enhancement between human-object interactions and human relations, ensuring their mutual consistency. Additionally, an Interaction Module is devised to effectively capture the dynamic nature of human-object interactions.
+            Comprehensive experiments conducted on two publicly available datasets showcase the superiority of our proposed method over state-of-the-art approaches. 
+          </p>
+          <!-- <p>
+          <p>
+            Here is the second paragraph of our paper's abstract.
+          </p>
+          </p> -->
+        </div>
+      </div>
+    </div>
+
+    <h2 class="title is-3 has-text-centered">Pipeline</h2>
+    <img style="width: 100%;" src="./assets/display/overview.png" alt="HyperNeRF architecture." />
+    <p>
+      Our Bi-Causal comprises two modules: Relation Module and Interaction Module, which are utilized to extract human relations and human-object interactions.
+      A causality communication channel enables token exchanges between RM and IM. The final representations from RM and IM are merged for the ultimate GAR output.
+      This structure simulates the bi-causality graph (right) with person features, final GAR representation, 
+      human relations, and human-object interactions. In causality graphs, solid lines indicate direct, dashed lines indicate indirect causal relationships.
+    </p>
+  </div>
+</section>
+
+<hr/>
+
+<section class="section">
+  <div class="container is-max-desktop">  
+    <div class="container is-max-desktop">
+        <div class="content has-text-justified">
+          <h2 class="title is-3">Group Activity Results</h2>
+          <p>
+            Compared to other methods that only succeed in attacking on individual imaging devices, our approach achieves stable attacks across all six imaging devices including two distinct cameras (Sony &#945;7R4&#128247; and Canon DS126231&#128247;) 
+            and four smartphone cameras (iPhone15&#128241;, RedmiK20&#128241;, HuaweiP50&#128241;, and SamsungS22&#128241;). 
+            The experiments are conducted using the YOLOv5 detector, with confidence threshold and NMS IOU threshold consistent with official settings, set at 0.25 and 0.45, respectively.
+          </p>
+          <div class="has-text-centered">
+            <img style="width: 100%;" src="./assets/display/failure_case.png" alt="Person detection." />
+          </div>
+        </div>
+    </div>
+
+    <div class="container is-max-desktop">
+      <div class="content has-text-justified">
+        <h2 class="title is-3">Understanding Group Activitiy from Different Representation </h2>
+        <p>
+          Compared to other methods that only succeed in attacking on individual imaging devices, our approach achieves stable attacks across all six imaging devices including two distinct cameras (Sony &#945;7R4&#128247; and Canon DS126231&#128247;) 
+          and four smartphone cameras (iPhone15&#128241;, RedmiK20&#128241;, HuaweiP50&#128241;, and SamsungS22&#128241;). 
+          The experiments are conducted using the YOLOv5 detector, with confidence threshold and NMS IOU threshold consistent with official settings, set at 0.25 and 0.45, respectively.
+        </p>
+        <div class="has-text-centered">
+          <img style="width: 100%;" src="./assets/display/visual5.png" alt="Person detection." />
+        </div>
+
+        <div class="has-text-centered">
+          <img style="width: 100%;" src="./assets/display/tsne2.png" alt="Person detection." />
+        </div>
+      </div>
+  </div>
+
+    <div class="columns is-centered">
+      
+      <div class="column is-half">
+        <div class="content">
+          <h3 class="title is-4">Quantification of digital-space attacks</h3>
+          <div class="level-set has-text-justified">
+            <p>
+              The figure below presents the precision-recall (PR) curves of different methods on the INRIAPerson dataset. Our method exhibits excellent performance across various ISP settings, with the lowest AP reduction down to 27.8%.
+            </p>
+            <div>
+              <img src="./assets/display/digitalPersonDet_v1.png" width="100%"/>
+            </div>
+            <!-- <p>
+              can be represented as slices through this auxiliary shape
+            </p>
+            <div>
+              <img src="./assets/display/physicalPerson.png" width="100%"/>
+            </div>
+            <p>
+              We can naturally model topologically varying shapes by just moving the
+              slicing plane along the higher dimensions. For example, this animation was generated
+              by
+              moving the slicing plane from top to bottom:
+            </p> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-half">
+        <div class="content">
+          <h3 class="title is-4">Quantification of real-world attacks</h3>
+          <div class="level-set has-text-justified">
+            <p>
+              In all six sets of quantitative comparisons, our method achieves an ASR (Attack Success Rate) of over 90% across six imaging devices, demonstrating excellent attack effectiveness and stability on the person detection task.
+            </p>
+            <div>
+              <img src="./assets/display/physicalPerson.png" width="100%"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</section>
+
+<hr/> 
+
+    <section>
+      <!-- <h1 class="title is-3 has-text-centered">Results Showcase of Camera Lens Simulation
+      </h1> -->
+      <div class="container is-max-widescreen">
+        <!-- <div class="colunms is-flex is-justify-content-center">
+          <div class="column is-one-quarter has-text-centered">
+            <img src="./assets/lens/crop_000021_orig.png" alt />
+            <h1 class="is-title">orig</h1>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <img src="./assets/lens/crop_000021_Cooke.png" alt />
+            <h1 class="is-title">Cooke</h1>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <img src="./assets/lens/crop_000021_Doublet.png" alt />
+            <h1 class="is-title">Doublet</h1>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <img src="./assets/lens/crop_000021_Singlet.png" alt />
+            <h1 class="is-title">Singlet</h1>
+          </div>
+          <div class="column is-one-quarter has-text-centered">
+            <img src="./assets/lens/crop_000021_Tessar.png" alt />
+            <h1 class="is-title">Tessar</h1>
+          </div>
+
+        </div> -->
+        <div class="content has-text-justified"></div>
+        <h2 class="title is-3">Results Showcase of our ISP Proxy Network
+        </h2>
+        <p>Here is an interactive viewer for the camera ISP proxy network of our defender. It generates the corresponding camera ISP-processed image based on conditional input parameters.
+           Drag the <span style="color: #29e">blue cursor</span> around to change the images on the right.</p>
+        <br /><br />
+        <div class="columns is-centered">
+          <div class="column is-one-third">
+            <div class="hyper-space-wrapper has-text-centered title is-5">
+              <div class="hyper-space-axis">
+                <div class="hyper-space1">
+                  <div class="hyper-space-cursor1" id="cursor1"></div>
+                </div>
+              </div>
+             X: Gamma Adjustment<br> 
+             Y: Color Correction Matrix
+              <br />
+
+            </div>
+          </div>
+          <div class="column is-one-third has-text-centered">
+            <div class="hyper-grid-wrapper">
+              <div class="hyper-grid-rgb1">
+                <img src="./static/figures/isp_gamma_cont_2.jpg" />
+              </div>
+            </div>
+            Ground truth
+          </div>
+          <div class="column is-one-third has-text-centered">
+            <div class="hyper-grid-wrapper">
+              <div class="hyper-grid-rgb1">
+                <img src="static/figures/449_gamma_cont_net.jpg" />
+              </div>
+            </div>
+            Our ISP Proxy Network
+          </div>
+        </div>
+
+        <div class="info">
+          <span class="title is-5 has-text-left">
+            Gamma Adjustment:
+          </span>
+          <span class="is-text is-6">Gamma adjustment is a process that alters the luminance values of an image to match the characteristics of the display device. </span>
+  
+          <br />
+          <span class="title is-5 has-text-left">
+            Color Correction Matrix: 
+          </span>
+          <span class="is-text is-6">Color Correction Matrix is used to correct color inaccuracies in an image.</span>
+
+        </div>
+        
+
+
+        
+        <div class="columns is-centered">
+          <div class="column is-one-third">
+            <div class="hyper-space-wrapper has-text-centered title is-5">
+              <div class="hyper-space-axis">
+                <div class="hyper-space2">
+                  <div class="hyper-space-cursor2"></div>
+                </div>
+              </div>
+              X: Brightness Contrast Control <br> Y: Non-Local Means
+              <br />
+
+            </div>
+          </div>
+          <div class="column is-one-third has-text-centered">
+            <div class="hyper-grid-wrapper">
+              <div class="hyper-grid-rgb2">
+                <img src="./static/figures/isp_ccm_nlm_2.jpg" />
+              </div>
+            </div>
+            Ground truth
+          </div>
+          <div class="column is-one-third has-text-centered">
+            <div class="hyper-grid-wrapper">
+              <div class="hyper-grid-rgb2">
+                <img src="static/figures/449_ccm_nlm_net.jpg" />
+              </div>
+            </div>
+            Our ISP Proxy Network
+          </div>
+        </div>
+        <div class="info">
+          <span class="title is-5 has-text-left">
+            Brightness Contrast Control: 
+          </span>
+          <span class="is-text is6">Brightness Contrast Control controls the overall brightness and contrast of an image. </span>
+          <br />
+          <span class="title is-5 has-text-left">
+            Non-Local Means: 
+          </span>
+          <span class="is-text is6">Non-Local Means is a denoising technique used to reduce noise in images while preserving details.</span>
+        </div>
+
+        
+        <div class="columns is-centered">
+          <div class="column is-one-third">
+            <div class="hyper-space-wrapper has-text-centered title is-5">
+              <div class="hyper-space-axis">
+                <div class="hyper-space3">
+                  <div class="hyper-space-cursor3"></div>
+                </div>
+              </div>
+              X: Spatial Filtering <br> Y: Hue Saturation Control
+              <br />
+
+            </div>
+          </div>
+          <div class="column is-one-third has-text-centered">
+            <div class="hyper-grid-wrapper">
+              <div class="hyper-grid-rgb3">
+                <img src="./static/figures/isp_bnf_sat_2.jpg" />
+              </div>
+            </div>
+            Ground truth
+          </div>
+          <div class="column is-one-third has-text-centered">
+            <div class="hyper-grid-wrapper">
+              <div class="hyper-grid-rgb3">
+                <img src="static/figures/449_bnf_sat_net.jpg" />
+              </div>
+            </div>
+            Our ISP Proxy Network
+          </div>
+        </div>
+        <div class="info">
+          <span class="title is-5 has-text-left">
+            Spatial Filtering:
+          </span>
+          <span class="is-text is-6">Spatial filtering is a technique used to enhance or suppress certain features within an image based on their spatial characteristics.</span>
+          <br />
+          <span class="title is-5 has-text-left">
+            Hue Saturation Control:
+          </span>
+          <span class="is-text is-6">Hue Saturation Control adjusts the hue and saturation of colors in an image. </span>
+        </div>
+
+      </section>
+
+      <hr />
+
+      <!-- <footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://arxiv.org/pdf/2106.13228.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+</footer> -->
+      <footer class="footer">
+        <div class="container">
+          <div class="columns is-centered">
+            <div class="column is-8">
+              <div class="content has-text-centered">
+                <p>
+                  The website design is adapted from <a
+                    href="https://portrait-disco.github.io/">DisCO</a> and <a
+                    href="https://github.com/hypernerf/hypernerf.github.io">HyperNeRF</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <script type="text/javascript" src="./static/slick/slick.min.js"></script>
+    </body>
+  </html>
