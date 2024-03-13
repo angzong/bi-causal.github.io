@@ -155,15 +155,10 @@
     <div class="container is-flex is-justify-content-center" style="object-fit: contain;">
       <div class="columns">
         <div class="column is-flex is-justify-content-center  is-flex-wrap-wrap">
-          <!-- <video id="teaser" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/images/demo.mp4" type="video/mp4">
-          </video>
+          <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/WaEb2z3C6HQ?si=eWzSA6WG-hgykdrF?autoplay=1&origin=http://example.com" title="YouTube video player" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+          <img src="./assets/display/motivationx4.png" width="45%" alt />
           <h2 class="subtitle has-text-centered">
-            <i>Video1</i> &nbsp; method shows the physical attack effect using visible light imaging.
-          </h2> -->
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/WaEb2z3C6HQ?si=eWzSA6WG-hgykdrF?autoplay=1&origin=http://example.com" title="YouTube video player" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          <h2 class="subtitle has-text-centered">
-            Physical adversarial attacks of the <strong>baseline</strong> across <br> six different imaging devices.
+            Motivation of our Bi-Causal model, human-object interactions and human relations causally forecast each other.
           </h2>
         </div>
         <div class="column is-flex is-justify-content-center  is-flex-wrap-wrap">
@@ -173,9 +168,10 @@
           <h2 class="subtitle has-text-centered">
             <i>Video2</i> &nbsp; method shows the physical attack effect using thermal infrared imaging.
           </h2> -->
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/w2XVsYO8mCA?si=PCfbYDjoo_tWbCl1?autoplay=1&origin=http://example.com" title="YouTube video player" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/w2XVsYO8mCA?si=PCfbYDjoo_tWbCl1?autoplay=1&origin=http://example.com" title="YouTube video player" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+          <img src="./assets/display/HOI-C.png" width="75%" alt />
           <h2 class="subtitle has-text-centered">
-            Physical adversarial attacks of <strong>our method</strong> across <br> six different imaging devices.
+            Human-object interactions exist within group activities and hold a significant position.
           </h2>
         </div>
       </div>
@@ -184,7 +180,7 @@
 </section>
 
 
-<section class="hero is-dark is-small">
+<!-- <section class="hero is-dark is-small">
   <div class="hero-body">
     <div class="container has-text-centered">
       <div id="results-carousel" class="carousel results-carousel">
@@ -192,8 +188,7 @@
         <div>
           <div class="results-item" >
             <div class="is-flex is-justify-content-center"  style="object-fit: contain;">
-                <img src="./assets/display/displaySony.PNG" width="100%" alt />
-                <!-- <img src="./assets/lens/crop_000021_orig.png"  width="50%" alt /> -->
+                <img src="./assets/display/motivationx4.png" width="45%" alt />
             </div>
           </div>
         </div>
@@ -202,61 +197,14 @@
           <div class="results-item">
             <div class="is-flex is-justify-content-center" style="object-fit: contain;">
 
-              <img src="./assets/display/displayCanon.png" width="100%" alt />
+              <img src="./assets/display/HOI-C.png" width="75%" alt />
             </div>
           </div>
-        </div>
-
-        <div>
-          <div class="results-item">
-            <div class="is-flex is-justify-content-center" style="object-fit: contain;">
-
-              <img src="./assets/display/displayiPhone.png" width="100%" alt />
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="results-item">
-            <div class="is-flex is-justify-content-center" style="object-fit: contain;">
-
-              <img src="./assets/display/displayMi.png" width="100%" alt />
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="results-item">
-            <div class="is-flex is-justify-content-center" style="object-fit: contain;">
-
-              <img src="./assets/display/displayHuawei.png" width="100%" alt />
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="results-item">
-            <div class="is-flex is-justify-content-center" style="object-fit: contain;">
-
-              <img src="./assets/display/displaySamsung.png" width="100%" alt />
-            </div>
-          </div>
-        </div>
-
-
-
-      </div>
-
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-three-quarters">
-          <p>
-            Here, we present the comparison results between <strong>T-SEA</strong> [<i>Huang et al. 2023</i>] and <strong>our method</strong>. We control the scene to eliminate the influence of irrelevant factors. Click the arrow or drag to view more results.
-          </p>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
 <section class="section">
@@ -293,258 +241,116 @@
 <hr/>
 
 <section class="section">
+    <div class="container is-max-desktop">
+      <div class="content has-text-justified">
+        <h2 class="title is-3">Understanding Group Activitiy from Different Representation </h2>
+        <h3 class="title is-4">Why Bi-Causal?</h3>
+        <p>
+          Many methods employed attention mechanisms or graph neural networks to model human relations (HRs), 
+          which are considered as key information in group activity. However, while these methods have shown progress, 
+          the exploration of Human-Object Interactions (HOIs) in group-object scenarios remains largely unexplored. 
+          Understanding the physical movement of objects helps in analyzing key individuals in GAR.
+          It motivate us to combine HOIs and HRs in GAR, and it naturally raises a question:
+          What is the relationship between HRs and HOIs in understanding team behavior?
+          Based on our observations and experiments, we posit bidirectional causality between HRs and HOIs. 
+          It suggests that HRs and HOIs mutually forecast each other in both directions, 
+          implying that a change in one may anticipate the other.
+          </p>
+        <div class="has-text-centered">
+          <img style="width: 100%;" src="./assets/display/visual5.png" alt="Person detection." />
+        </div>
+        <h3 class="title is-4">Results visualization</h3>
+        <p>
+          We utilize t-SNE to project the group activity representations onto a two-dimensional plane.
+          The results depicted in the figure show that describing activities using both HRs and HOIs 
+          concurrently yields superior performance compared to using either HRs or HOIs in isolation. 
+          Moreover, exploring bidirectional causality between HRs and HOIs further enhances the 
+        </p>
+        <div class="has-text-centered">
+          <img style="width: 100%;" src="./assets/display/tsne2.png" alt="Person detection." />
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="section">
   <div class="container is-max-desktop">  
     <div class="container is-max-desktop">
         <div class="content has-text-justified">
           <h2 class="title is-3">Group Activity Results</h2>
           <p>
-            Compared to other methods that only succeed in attacking on individual imaging devices, our approach achieves stable attacks across all six imaging devices including two distinct cameras (Sony &#945;7R4&#128247; and Canon DS126231&#128247;) 
-            and four smartphone cameras (iPhone15&#128241;, RedmiK20&#128241;, HuaweiP50&#128241;, and SamsungS22&#128241;). 
-            The experiments are conducted using the YOLOv5 detector, with confidence threshold and NMS IOU threshold consistent with official settings, set at 0.25 and 0.45, respectively.
+            Compared to other methods, ours demonstrates better stability and achieves excellent results across all categories. 
+            This is because Bi-Casal comprehensively understands collective behavior from both interpersonal relationships
+             and human interaction perspectives, considering their mutual influence and facilitation. 
+            This allows Bi-Casal to capture more pattern differences between categories, resulting in better performance.
           </p>
           <div class="has-text-centered">
             <img style="width: 100%;" src="./assets/display/failure_case.png" alt="Person detection." />
           </div>
+          <p>
+            Figure below visualizes the feature distributions learned from the test set of the 
+            Volleyball dataset. Our method adds inter-class differences compared to the 
+            COMPOSER and GroupFormer, making the classification boundaries more visible.
+          </p>
+          <div class="has-text-centered">
+            <img style="width: 100%;" src="./assets/display/sup_tsne2.png" alt="Person detection." />
+          </div>
         </div>
     </div>
-
-    <div class="container is-max-desktop">
-      <div class="content has-text-justified">
-        <h2 class="title is-3">Understanding Group Activitiy from Different Representation </h2>
-        <p>
-          Compared to other methods that only succeed in attacking on individual imaging devices, our approach achieves stable attacks across all six imaging devices including two distinct cameras (Sony &#945;7R4&#128247; and Canon DS126231&#128247;) 
-          and four smartphone cameras (iPhone15&#128241;, RedmiK20&#128241;, HuaweiP50&#128241;, and SamsungS22&#128241;). 
-          The experiments are conducted using the YOLOv5 detector, with confidence threshold and NMS IOU threshold consistent with official settings, set at 0.25 and 0.45, respectively.
-        </p>
-        <div class="has-text-centered">
-          <img style="width: 100%;" src="./assets/display/visual5.png" alt="Person detection." />
-        </div>
-
-        <div class="has-text-centered">
-          <img style="width: 100%;" src="./assets/display/tsne2.png" alt="Person detection." />
-        </div>
-      </div>
-  </div>
 
     <div class="columns is-centered">
       
-      <div class="column is-half">
-        <div class="content">
-          <h3 class="title is-4">Quantification of digital-space attacks</h3>
-          <div class="level-set has-text-justified">
-            <p>
-              The figure below presents the precision-recall (PR) curves of different methods on the INRIAPerson dataset. Our method exhibits excellent performance across various ISP settings, with the lowest AP reduction down to 27.8%.
-            </p>
-            <div>
-              <img src="./assets/display/digitalPersonDet_v1.png" width="100%"/>
-            </div>
-            <!-- <p>
-              can be represented as slices through this auxiliary shape
-            </p>
-            <div>
-              <img src="./assets/display/physicalPerson.png" width="100%"/>
-            </div>
-            <p>
-              We can naturally model topologically varying shapes by just moving the
-              slicing plane along the higher dimensions. For example, this animation was generated
-              by
-              moving the slicing plane from top to bottom:
-            </p> -->
+    <div class="column is-half">
+      <div class="content">
+        <!-- <h3 class="title is-4">Quantification of digital-space attacks</h3> -->
+        <div class="level-set has-text-justified">
+          <p>
+            The figure below presents the accuracy of different categories on the Volleyball dataset. 
+            Our method exhibits excellent performance across various categories, with 
+            the lowest single class recognition accuracy down to 93%.
+          </p>
+          <div>
+            <img src="./assets/display/column.png" width="100%"/>
           </div>
-        </div>
-      </div>
-
-      <div class="column is-half">
-        <div class="content">
-          <h3 class="title is-4">Quantification of real-world attacks</h3>
-          <div class="level-set has-text-justified">
-            <p>
-              In all six sets of quantitative comparisons, our method achieves an ASR (Attack Success Rate) of over 90% across six imaging devices, demonstrating excellent attack effectiveness and stability on the person detection task.
-            </p>
-            <div>
-              <img src="./assets/display/physicalPerson.png" width="100%"/>
-            </div>
+          <!-- <p>
+            can be represented as slices through this auxiliary shape
+          </p>
+          <div>
+            <img src="./assets/display/physicalPerson.png" width="100%"/>
           </div>
+          <p>
+            We can naturally model topologically varying shapes by just moving the
+            slicing plane along the higher dimensions. For example, this animation was generated
+            by
+            moving the slicing plane from top to bottom:
+          </p> -->
         </div>
       </div>
     </div>
 
-    
+    <div class="column is-half">
+      <div class="content">
+        <!-- <h3 class="title is-4">Quantification of real-world attacks</h3> -->
+        <div class="level-set has-text-justified">
+          <p>
+            The confusion matrices below show the comparison result of our method with the 
+            COMPOSER and GroupFormer. One of the main advantages of our approach lies in the 
+            identification of two classes, pass and set. In group activity pass and set, 
+            human actions and relations are more similar, but there are large differences in human-object interaction.
+            Our IM and the bidirectional causality between HRs and HOIs 
+            can make Bi-Causal aware of these differences and get relatively better results.
+          </p>
+          <div>
+            <img src="./assets/display/composer.png" width="200%"/>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  </div>
+  
 </section>
 
-<hr/> 
-
-    <section>
-      <!-- <h1 class="title is-3 has-text-centered">Results Showcase of Camera Lens Simulation
-      </h1> -->
-      <div class="container is-max-widescreen">
-        <!-- <div class="colunms is-flex is-justify-content-center">
-          <div class="column is-one-quarter has-text-centered">
-            <img src="./assets/lens/crop_000021_orig.png" alt />
-            <h1 class="is-title">orig</h1>
-          </div>
-          <div class="column is-one-quarter has-text-centered">
-            <img src="./assets/lens/crop_000021_Cooke.png" alt />
-            <h1 class="is-title">Cooke</h1>
-          </div>
-          <div class="column is-one-quarter has-text-centered">
-            <img src="./assets/lens/crop_000021_Doublet.png" alt />
-            <h1 class="is-title">Doublet</h1>
-          </div>
-          <div class="column is-one-quarter has-text-centered">
-            <img src="./assets/lens/crop_000021_Singlet.png" alt />
-            <h1 class="is-title">Singlet</h1>
-          </div>
-          <div class="column is-one-quarter has-text-centered">
-            <img src="./assets/lens/crop_000021_Tessar.png" alt />
-            <h1 class="is-title">Tessar</h1>
-          </div>
-
-        </div> -->
-        <div class="content has-text-justified"></div>
-        <h2 class="title is-3">Results Showcase of our ISP Proxy Network
-        </h2>
-        <p>Here is an interactive viewer for the camera ISP proxy network of our defender. It generates the corresponding camera ISP-processed image based on conditional input parameters.
-           Drag the <span style="color: #29e">blue cursor</span> around to change the images on the right.</p>
-        <br /><br />
-        <div class="columns is-centered">
-          <div class="column is-one-third">
-            <div class="hyper-space-wrapper has-text-centered title is-5">
-              <div class="hyper-space-axis">
-                <div class="hyper-space1">
-                  <div class="hyper-space-cursor1" id="cursor1"></div>
-                </div>
-              </div>
-             X: Gamma Adjustment<br> 
-             Y: Color Correction Matrix
-              <br />
-
-            </div>
-          </div>
-          <div class="column is-one-third has-text-centered">
-            <div class="hyper-grid-wrapper">
-              <div class="hyper-grid-rgb1">
-                <img src="./static/figures/isp_gamma_cont_2.jpg" />
-              </div>
-            </div>
-            Ground truth
-          </div>
-          <div class="column is-one-third has-text-centered">
-            <div class="hyper-grid-wrapper">
-              <div class="hyper-grid-rgb1">
-                <img src="static/figures/449_gamma_cont_net.jpg" />
-              </div>
-            </div>
-            Our ISP Proxy Network
-          </div>
-        </div>
-
-        <div class="info">
-          <span class="title is-5 has-text-left">
-            Gamma Adjustment:
-          </span>
-          <span class="is-text is-6">Gamma adjustment is a process that alters the luminance values of an image to match the characteristics of the display device. </span>
-  
-          <br />
-          <span class="title is-5 has-text-left">
-            Color Correction Matrix: 
-          </span>
-          <span class="is-text is-6">Color Correction Matrix is used to correct color inaccuracies in an image.</span>
-
-        </div>
-        
-
-
-        
-        <div class="columns is-centered">
-          <div class="column is-one-third">
-            <div class="hyper-space-wrapper has-text-centered title is-5">
-              <div class="hyper-space-axis">
-                <div class="hyper-space2">
-                  <div class="hyper-space-cursor2"></div>
-                </div>
-              </div>
-              X: Brightness Contrast Control <br> Y: Non-Local Means
-              <br />
-
-            </div>
-          </div>
-          <div class="column is-one-third has-text-centered">
-            <div class="hyper-grid-wrapper">
-              <div class="hyper-grid-rgb2">
-                <img src="./static/figures/isp_ccm_nlm_2.jpg" />
-              </div>
-            </div>
-            Ground truth
-          </div>
-          <div class="column is-one-third has-text-centered">
-            <div class="hyper-grid-wrapper">
-              <div class="hyper-grid-rgb2">
-                <img src="static/figures/449_ccm_nlm_net.jpg" />
-              </div>
-            </div>
-            Our ISP Proxy Network
-          </div>
-        </div>
-        <div class="info">
-          <span class="title is-5 has-text-left">
-            Brightness Contrast Control: 
-          </span>
-          <span class="is-text is6">Brightness Contrast Control controls the overall brightness and contrast of an image. </span>
-          <br />
-          <span class="title is-5 has-text-left">
-            Non-Local Means: 
-          </span>
-          <span class="is-text is6">Non-Local Means is a denoising technique used to reduce noise in images while preserving details.</span>
-        </div>
-
-        
-        <div class="columns is-centered">
-          <div class="column is-one-third">
-            <div class="hyper-space-wrapper has-text-centered title is-5">
-              <div class="hyper-space-axis">
-                <div class="hyper-space3">
-                  <div class="hyper-space-cursor3"></div>
-                </div>
-              </div>
-              X: Spatial Filtering <br> Y: Hue Saturation Control
-              <br />
-
-            </div>
-          </div>
-          <div class="column is-one-third has-text-centered">
-            <div class="hyper-grid-wrapper">
-              <div class="hyper-grid-rgb3">
-                <img src="./static/figures/isp_bnf_sat_2.jpg" />
-              </div>
-            </div>
-            Ground truth
-          </div>
-          <div class="column is-one-third has-text-centered">
-            <div class="hyper-grid-wrapper">
-              <div class="hyper-grid-rgb3">
-                <img src="static/figures/449_bnf_sat_net.jpg" />
-              </div>
-            </div>
-            Our ISP Proxy Network
-          </div>
-        </div>
-        <div class="info">
-          <span class="title is-5 has-text-left">
-            Spatial Filtering:
-          </span>
-          <span class="is-text is-6">Spatial filtering is a technique used to enhance or suppress certain features within an image based on their spatial characteristics.</span>
-          <br />
-          <span class="title is-5 has-text-left">
-            Hue Saturation Control:
-          </span>
-          <span class="is-text is-6">Hue Saturation Control adjusts the hue and saturation of colors in an image. </span>
-        </div>
-
-      </section>
-
-      <hr />
 
       <!-- <footer class="footer">
   <div class="container">
